@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" fx:id="wrapperLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8">
+    <children>
+        <Pane fx:id="paneLogin" layoutX="50.0" layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity"
+              minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="600.0">
+            <children>
+                <Pane styleClass="content" layoutX="2.5" layoutY="2.5" maxHeight="-Infinity" maxWidth="-Infinity"
+                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="595.0">
+                    <children>
+                        <HBox alignment="CENTER" layoutX="77.0" layoutY="99.0" prefHeight="147.0" prefWidth="352.0">
+                            <children>
+                                <VBox fx:id="vboxLogin" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="280.0"
+                                      spacing="40.0">
+                                    <children>
+                                        <Label styleClass="whiteText" text="Please logon: "/>
+                                        <TextField fx:id="username" prefHeight="47.0" prefWidth="280.0"
+                                                   promptText="Username...">
+                                            <font>
+                                                <Font name="DejaVu Sans Bold" size="21.0"/>
+                                            </font>
+                                            <opaqueInsets>
+                                                <Insets/>
+                                            </opaqueInsets>
+                                        </TextField>
+                                        <PasswordField fx:id="password" onAction="#login" promptText="Password...">
+                                            <font>
+                                                <Font name="DejaVu Sans ExtraLight" size="21.0"/>
+                                            </font>
+                                        </PasswordField>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                    <opaqueInsets>
+                        <Insets/>
+                    </opaqueInsets>
+                </Pane>
+                <Button fx:id="buttonLoginClose" layoutX="550.0" layoutY="-12.0" mnemonicParsing="false"
+                        onAction="#close" text="X"/>
+            </children>
+        </Pane>
+        <Label fx:id="LoginTitle" layoutX="36.0" layoutY="37.0" text="Cinderella"/>
+        <Label layoutX="491.0" layoutY="456.0" text="HTW-Dresden V 0.2"/>
+    </children>
+</Pane>

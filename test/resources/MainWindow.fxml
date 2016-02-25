@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" xmlns="http://javafx.com/javafx/8">
+    <center>
+        <ScrollPane fx:id="scrollpane" fitToHeight="true" fitToWidth="true" prefViewportHeight="600"
+                    prefViewportWidth="800">
+            <content>
+                <TilePane fx:id="tile" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" styleClass="content">
+                    <padding>
+                        <Insets top="50.0"/>
+                    </padding>
+                </TilePane>
+            </content>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="200.0" styleClass="content"
+              BorderPane.alignment="CENTER">
+            <children>
+                <Button onMousePressed="#buttonClicked" onMouseExited="#mouseExited" onMouseEntered="#dragEvent"
+                        fx:id="WIP" styleClass="button" minHeight="100.0" minWidth="200.0" mnemonicParsing="false"
+                        onAction="#showWIP" text="WIP"/>
+
+                <Button onMousePressed="#buttonClicked" onMouseExited="#mouseExited" fx:id="CONFIG"
+                        onMouseEntered="#dragEvent" styleClass="button" minHeight="100.0" minWidth="200.0"
+                        mnemonicParsing="false" onAction="#showConfig" text="Config"/>
+            </children>
+        </HBox>
+    </bottom>
+
+</BorderPane>

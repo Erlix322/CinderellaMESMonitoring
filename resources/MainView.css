@@ -1,0 +1,9 @@
+
+
+#gobbler{
+ -fx-background-image: url("../Pictures/green_gobbler.png");
+}
+
+#scrollPCenter{
+    -fx-background-image: url("sample/Pictures/footer_lodyas.png");
+}

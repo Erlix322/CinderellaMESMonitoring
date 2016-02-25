@@ -1,0 +1,20 @@
+
+#pane{
+    -fx-background-color: rgb(23,124,25,0.5);
+}
+.wrapper{
+     -fx-background-color: rgb(118,118,118,1);
+
+}
+#UKN{
+    -fx-background-color: rgb(255,255,255,0.8);
+
+}
+#PROC{
+      -fx-background-color: rgb(0,255,84,0.8);
+}
+
+
+#IDLE{
+       -fx-background-color: yellow;
+}
