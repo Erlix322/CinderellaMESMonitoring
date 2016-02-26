@@ -16,7 +16,7 @@ import java.sql.SQLException;
 /**
  * Created by note on 28.11.2015.
  */
-public class ToolWipController implements VC {
+public class ToolWipController extends ViewController implements VC {
     @FXML
     TableView tableView;
     @FXML

@@ -17,7 +17,6 @@ import javafx.scene.control.Alert.AlertType;
 
 /**
  * class to connect to PostgreSQL
- *
  * @author Eric Brandt
  */
 public class PostgresConnect implements DatabaseInterface {
@@ -28,9 +27,10 @@ public class PostgresConnect implements DatabaseInterface {
 
        
     public PostgresConnect() {
-    	dbURL = "jdbc:postgresql://192.168.1.20:5432/vwp";
+      dbURL = "jdbc:postgresql://192.168.1.20:5432/vwp";
       this.user = User.getUser();
       this.pass = User.getPassword();
+      System.out.println("Connectiondata: "+user +":"+ pass);
       System.out.println("Connectiondata: "+user +":"+ pass);
       setupConn();
     }
@@ -57,6 +57,4 @@ public class PostgresConnect implements DatabaseInterface {
     public Connection getConnection() {
         return myConn;
     }
-
-
 }
