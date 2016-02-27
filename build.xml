@@ -95,6 +95,7 @@
 		<fx:application id="fxApplication"
 			name="Cinderella"
 			mainClass="cinderella.Main"
+			toolkit="fx"
 		/>
 	
 		<mkdir dir="build/classes/META-INF" />
@@ -108,14 +109,31 @@
 			<fx:resources refid="appRes"/>
 	
 			<manifest>
-				<attribute name="Implementation-Vendor" value=""/>
+				<attribute name="Implementation-Vendor" value="test"/>
 				<attribute name="Implementation-Title" value="Cinderella"/>
-				<attribute name="Implementation-Version" value=""/>
+				<attribute name="Implementation-Version" value="1"/>
 				<attribute name="JavaFX-Feature-Proxy" value="None"/>
 			</manifest>
 		</fx:jar>
 	
 	
+		<mkdir dir="deploy" />
+		<!-- Need to use ${basedir} because somehow the ant task is calculating the directory differently -->
+		<fx:deploy
+			embedJNLP="false"
+			extension="false"
+			includeDT="false"
+			offlineAllowed="true"
+			outdir="${basedir}/deploy"
+			outfile="cinderella_eclipse" nativeBundles="exe"
+			updatemode="background" >
+	
+			<fx:platform basedir="${java.home}"/>
+			<fx:info title="cinderella_eclipse" vendor="test"/>
+	
+			<fx:application refId="fxApplication"/>
+			<fx:resources refid="appRes"/>
+		</fx:deploy>
 	
 	
 	</target>

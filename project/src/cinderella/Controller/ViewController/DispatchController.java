@@ -23,7 +23,7 @@ import java.util.Properties;
 /**
  * Created by note on 27.11.2015.
  */
-public class DispatchController implements VC {
+public class DispatchController extends ViewController {
 
     @FXML
     TableView tableView;
@@ -48,8 +48,8 @@ public class DispatchController implements VC {
     }
 
     @FXML
-    public void initialize() throws InterruptedException, IOException {
-
+    public void initialize() {
+    	try{
         InputStream fi = DispatchController.class.getResourceAsStream("/resources/Configuration.txt");
         Properties properties = new Properties();
         properties.load(fi);
@@ -59,6 +59,9 @@ public class DispatchController implements VC {
         loadData("50", "0");
         loadTableView();
         vonbis.setText("0 - 50");
+    	}catch(Exception e){
+    		e.printStackTrace();
+    	}
     }
 
     private void startThread() {

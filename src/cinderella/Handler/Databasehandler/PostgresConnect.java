@@ -27,9 +27,9 @@ public class PostgresConnect implements DatabaseInterface {
 
        
     public PostgresConnect() {
-      dbURL = "jdbc:postgresql://192.168.1.20:5432/vwp";
-      this.user = User.getUser();
-      this.pass = User.getPassword();
+    	  dbURL = "jdbc:postgresql://127.0.0.1:5432/vwp";
+          this.user = "postgres";
+          this.pass = "harrypotter";
       System.out.println("Connectiondata: "+user +":"+ pass);
       System.out.println("Connectiondata: "+user +":"+ pass);
       setupConn();
