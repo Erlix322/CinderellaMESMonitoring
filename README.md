@@ -10,7 +10,7 @@ Zur Installation laden Sie sich eines der folgenden Pakete herunter.
 
 [Ubuntu 14.04 .deb] (https://www.dropbox.com/s/tn196yobhpmue58/cinderella-1.0.deb?dl=0)
 
-[Linux_x86_64.rpm] ()
+[Linux_x86_64.rpm] (https://www.dropbox.com/s/r5p193aio11k9ui/cinderella-1.0-1.x86_64.rpm?dl=0)
 
 [Windows .exe] (https://www.dropbox.com/s/3cwm295ro82b67v/Cinderella-1.0.exe?dl=0)
 
