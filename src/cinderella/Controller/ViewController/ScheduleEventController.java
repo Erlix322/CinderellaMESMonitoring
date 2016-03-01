@@ -64,6 +64,6 @@ Stage stage;
 
     @FXML
     public void initialize() {
-    	rootSchedEvent.getStylesheets().add("/resources/style.css");
+    	rootSchedEvent.getStylesheets().add("/resources/SchedEventView.css");
     }
 }
