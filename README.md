@@ -8,7 +8,7 @@ Diese Arbeit ist als freiwillige Leistung im Wintersemester 2015/16 an der HTW-D
 ##Installation
 Zur Installation laden Sie sich eines der folgenden Pakete herunter.
 
-[Ubuntu 14.04] ()
+[Ubuntu 14.04 .deb] (https://www.dropbox.com/s/tn196yobhpmue58/cinderella-1.0.deb?dl=0)
 
 [Linux_x86_64.rpm] ()
 
@@ -16,7 +16,7 @@ Zur Installation laden Sie sich eines der folgenden Pakete herunter.
 
 [Ausführbare Jar-File] (https://www.dropbox.com/s/y3wbr92yxqdg1e8/cinderella.jar?dl=0)
 
-Hinweis: Zur korrekten Ausführung der Jar File bedarf es der Installation der Java Laufzeitumgebung.
+Hinweis: Zur korrekten Ausführung der Jar File bedarf es der Installation der aktuellen Java Laufzeitumgebung.
 
 ##Nutzung
 Hinweis: Der Server ist nur über eine VPN Verbindung oder ein Gerät innerhalb des HTW-Netzes erreichbar!
