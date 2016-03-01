@@ -29,7 +29,7 @@ Loggen sie sich nun mit den erhaltenen Zugangsdaten in das MES ein.
 ![alt text][logo]
 [logo]: https://github.com/Erlix322/CinderellaMESMonitoring/blob/master/pictures/LoginScreen.jpeg
 ### 2. Main Window
-War der Login Erfolgreich, befinden sie sich jetzt im Hauptfenster der Applikation.
+War der Login erfolgreich, befinden sie sich jetzt im Hauptfenster der Applikation.
 Hier werden alle Tools aufgelistet und bei Statusänderung aktualisiert.
 ![alt text][mainview]
 [mainview]: https://github.com/Erlix322/CinderellaMESMonitoring/blob/master/pictures/MainView.JPG
