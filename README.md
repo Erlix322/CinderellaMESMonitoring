@@ -12,7 +12,7 @@ Zur Installation laden Sie sich eines der folgenden Pakete herunter.
 
 [Linux_x86_64.rpm] ()
 
-[Windows download] (https://www.dropbox.com/s/3cwm295ro82b67v/Cinderella-1.0.exe?dl=0)
+[Windows .exe] (https://www.dropbox.com/s/3cwm295ro82b67v/Cinderella-1.0.exe?dl=0)
 
 [Ausführbare Jar-File] (https://www.dropbox.com/s/y3wbr92yxqdg1e8/cinderella.jar?dl=0)
 
