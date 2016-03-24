@@ -29,7 +29,7 @@ public class HistQuery extends Query {
     public void setDBInterface(DatabaseInterface dbInterface) {
         this.setDbI(dbInterface);
     }
-
+//
 
 	@Override
 	public void prepareQuery() {
