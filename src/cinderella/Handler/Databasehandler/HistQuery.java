@@ -34,7 +34,7 @@ public class HistQuery extends Query {
 	@Override
 	public void prepareQuery() {
 		try{
-		this.setPreparedStatement(this.getDbI().getConnection().prepareStatement("select timestamp,l.product,l.lotid,note from events\n" +
+		this.setPreparedStatement(this.getDbI().getConnection().prepareStatement("select timestamp,l.product,l.lotid,note from events24\n" +
                 "JOIN lot l\n" +
                 "ON l.lotid=entity\n" +
                 "where note like ? AND event like 'START%' AND timestamp > '2016-02-14'"));
