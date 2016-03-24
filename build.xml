@@ -20,14 +20,14 @@
 		<mkdir dir="externalLibs" />
 	
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\note\workspace\cinderella_eclipse">
+			<fileset dir="/home/alf/git/CinderellaMESMonitoring">
 				<filename name="postgresql-9.4-1203.jdbc4.jar"/>
 			</fileset>
 		</copy>
 	
 		<mkdir dir="project" />
 		<copy todir="project">
-			<fileset dir="C:\Users\note\workspace\cinderella_eclipse">
+			<fileset dir="/home/alf/git/CinderellaMESMonitoring">
 				<include name="src/**" />
 			</fileset>
 		</copy>
@@ -56,7 +56,7 @@
 			</fileset>
 		</copy>
 	
-		<javac includeantruntime="false" source="1.8" target="1.8" srcdir="build/src" destdir="build/classes" encoding="Cp1252">
+		<javac includeantruntime="false" source="1.8" target="1.8" srcdir="build/src" destdir="build/classes" encoding="UTF-8">
 			<classpath>
 				<fileset dir="build/libs">
 					<include name="*"/>
@@ -109,9 +109,9 @@
 			<fx:resources refid="appRes"/>
 	
 			<manifest>
-				<attribute name="Implementation-Vendor" value="test"/>
+				<attribute name="Implementation-Vendor" value="htwdd"/>
 				<attribute name="Implementation-Title" value="Cinderella"/>
-				<attribute name="Implementation-Version" value="1"/>
+				<attribute name="Implementation-Version" value="1.0"/>
 				<attribute name="JavaFX-Feature-Proxy" value="None"/>
 			</manifest>
 		</fx:jar>
@@ -125,11 +125,11 @@
 			includeDT="false"
 			offlineAllowed="true"
 			outdir="${basedir}/deploy"
-			outfile="cinderella_eclipse" nativeBundles="exe"
+			outfile="cinderella_eclipse" nativeBundles="all"
 			updatemode="background" >
 	
 			<fx:platform basedir="${java.home}"/>
-			<fx:info title="cinderella_eclipse" vendor="test"/>
+			<fx:info title="cinderella_eclipse" vendor="htwdd"/>
 	
 			<fx:application refId="fxApplication"/>
 			<fx:resources refid="appRes"/>

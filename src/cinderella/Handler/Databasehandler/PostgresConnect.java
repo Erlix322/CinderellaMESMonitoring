@@ -44,7 +44,7 @@ public class PostgresConnect implements DatabaseInterface {
         	
             Logger.getLogger(PostgresConnect.class.getName()).log(Level.SEVERE, null, ex);
             Alert alert = new Alert(AlertType.ERROR);
-            alert.setContentText("Passwort oder Usernamen prüfen!");
+            alert.setContentText("Passwort oder Usernamen pruefen!");
             alert.show();
         }
     }
